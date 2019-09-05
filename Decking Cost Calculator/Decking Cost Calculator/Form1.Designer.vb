@@ -29,6 +29,7 @@ Partial Class frmDecking
         Me.radLumber = New System.Windows.Forms.RadioButton()
         Me.radRedwood = New System.Windows.Forms.RadioButton()
         Me.radComposite = New System.Windows.Forms.RadioButton()
+        Me.lblCost = New System.Windows.Forms.Label()
         Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,7 +98,6 @@ Partial Class frmDecking
         Me.radRedwood.Name = "radRedwood"
         Me.radRedwood.Size = New System.Drawing.Size(100, 27)
         Me.radRedwood.TabIndex = 1
-        Me.radRedwood.TabStop = True
         Me.radRedwood.Text = "Redwood"
         Me.radRedwood.UseVisualStyleBackColor = True
         '
@@ -108,9 +108,19 @@ Partial Class frmDecking
         Me.radComposite.Name = "radComposite"
         Me.radComposite.Size = New System.Drawing.Size(111, 27)
         Me.radComposite.TabIndex = 2
-        Me.radComposite.TabStop = True
         Me.radComposite.Text = "Composite"
         Me.radComposite.UseVisualStyleBackColor = True
+        '
+        'lblCost
+        '
+        Me.lblCost.AutoSize = True
+        Me.lblCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.ForeColor = System.Drawing.Color.Sienna
+        Me.lblCost.Location = New System.Drawing.Point(46, 225)
+        Me.lblCost.Name = "lblCost"
+        Me.lblCost.Size = New System.Drawing.Size(133, 25)
+        Me.lblCost.TabIndex = 4
+        Me.lblCost.Text = "Cost Estimate:"
         '
         'frmDecking
         '
@@ -118,6 +128,7 @@ Partial Class frmDecking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.grpDeckType)
         Me.Controls.Add(Me.txtFootage)
         Me.Controls.Add(Me.lblSquareFeet)
@@ -138,4 +149,5 @@ Partial Class frmDecking
     Friend WithEvents radLumber As RadioButton
     Friend WithEvents radRedwood As RadioButton
     Friend WithEvents radComposite As RadioButton
+    Friend WithEvents lblCost As Label
 End Class
