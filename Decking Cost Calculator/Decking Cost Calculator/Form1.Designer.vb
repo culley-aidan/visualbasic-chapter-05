@@ -22,7 +22,19 @@ Partial Class frmDecking
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.lblHeading = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'lblHeading
+        '
+        Me.lblHeading.AutoSize = True
+        Me.lblHeading.Font = New System.Drawing.Font("Goudy Old Style", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.ForeColor = System.Drawing.Color.Sienna
+        Me.lblHeading.Location = New System.Drawing.Point(12, 9)
+        Me.lblHeading.Name = "lblHeading"
+        Me.lblHeading.Size = New System.Drawing.Size(337, 37)
+        Me.lblHeading.TabIndex = 0
+        Me.lblHeading.Text = "Decking Cost Calculator"
         '
         'frmDecking
         '
@@ -30,10 +42,13 @@ Partial Class frmDecking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmDecking"
         Me.Text = "Decking Cost Calculator"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents lblHeading As Label
 End Class
