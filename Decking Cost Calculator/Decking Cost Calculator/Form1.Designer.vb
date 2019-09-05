@@ -33,7 +33,9 @@ Partial Class frmDecking
         Me.lblCostEstimate = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.picDeck = New System.Windows.Forms.PictureBox()
         Me.grpDeckType.SuspendLayout()
+        CType(Me.picDeck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -158,12 +160,23 @@ Partial Class frmDecking
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'picDeck
+        '
+        Me.picDeck.Image = Global.Decking_Cost_Calculator.My.Resources.Resources.deck
+        Me.picDeck.Location = New System.Drawing.Point(366, 2)
+        Me.picDeck.Name = "picDeck"
+        Me.picDeck.Size = New System.Drawing.Size(338, 390)
+        Me.picDeck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picDeck.TabIndex = 8
+        Me.picDeck.TabStop = False
+        '
         'frmDecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.picDeck)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblCostEstimate)
@@ -176,6 +189,7 @@ Partial Class frmDecking
         Me.Text = "Decking Cost Calculator"
         Me.grpDeckType.ResumeLayout(False)
         Me.grpDeckType.PerformLayout()
+        CType(Me.picDeck, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -192,4 +206,5 @@ Partial Class frmDecking
     Friend WithEvents lblCostEstimate As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents picDeck As PictureBox
 End Class
