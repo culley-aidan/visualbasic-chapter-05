@@ -27,6 +27,7 @@ Partial Class frmDecking
         Me.txtFootage = New System.Windows.Forms.TextBox()
         Me.grpDeckType = New System.Windows.Forms.GroupBox()
         Me.radLumber = New System.Windows.Forms.RadioButton()
+        Me.radRedwood = New System.Windows.Forms.RadioButton()
         Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,6 +65,7 @@ Partial Class frmDecking
         'grpDeckType
         '
         Me.grpDeckType.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDeckType.Controls.Add(Me.radRedwood)
         Me.grpDeckType.Controls.Add(Me.radLumber)
         Me.grpDeckType.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDeckType.ForeColor = System.Drawing.Color.Sienna
@@ -84,6 +86,17 @@ Partial Class frmDecking
         Me.radLumber.TabStop = True
         Me.radLumber.Text = "Pressure-Treated Lumber"
         Me.radLumber.UseVisualStyleBackColor = True
+        '
+        'radRedwood
+        '
+        Me.radRedwood.AutoSize = True
+        Me.radRedwood.Location = New System.Drawing.Point(6, 51)
+        Me.radRedwood.Name = "radRedwood"
+        Me.radRedwood.Size = New System.Drawing.Size(100, 27)
+        Me.radRedwood.TabIndex = 1
+        Me.radRedwood.TabStop = True
+        Me.radRedwood.Text = "Redwood"
+        Me.radRedwood.UseVisualStyleBackColor = True
         '
         'frmDecking
         '
@@ -109,4 +122,5 @@ Partial Class frmDecking
     Friend WithEvents txtFootage As TextBox
     Friend WithEvents grpDeckType As GroupBox
     Friend WithEvents radLumber As RadioButton
+    Friend WithEvents radRedwood As RadioButton
 End Class
