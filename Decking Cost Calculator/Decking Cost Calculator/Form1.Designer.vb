@@ -31,6 +31,7 @@ Partial Class frmDecking
         Me.radComposite = New System.Windows.Forms.RadioButton()
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblCostEstimate = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -134,12 +135,24 @@ Partial Class frmDecking
         Me.lblCostEstimate.TabIndex = 5
         Me.lblCostEstimate.Text = "$0000.00"
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.Sienna
+        Me.btnCalculate.Location = New System.Drawing.Point(41, 267)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(116, 41)
+        Me.btnCalculate.TabIndex = 6
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmDecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblCostEstimate)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.grpDeckType)
@@ -164,4 +177,5 @@ Partial Class frmDecking
     Friend WithEvents radComposite As RadioButton
     Friend WithEvents lblCost As Label
     Friend WithEvents lblCostEstimate As Label
+    Friend WithEvents btnCalculate As Button
 End Class
