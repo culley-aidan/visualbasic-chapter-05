@@ -26,6 +26,8 @@ Partial Class frmDecking
         Me.lblSquareFeet = New System.Windows.Forms.Label()
         Me.txtFootage = New System.Windows.Forms.TextBox()
         Me.grpDeckType = New System.Windows.Forms.GroupBox()
+        Me.radLumber = New System.Windows.Forms.RadioButton()
+        Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -62,6 +64,7 @@ Partial Class frmDecking
         'grpDeckType
         '
         Me.grpDeckType.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDeckType.Controls.Add(Me.radLumber)
         Me.grpDeckType.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDeckType.ForeColor = System.Drawing.Color.Sienna
         Me.grpDeckType.Location = New System.Drawing.Point(51, 102)
@@ -70,6 +73,17 @@ Partial Class frmDecking
         Me.grpDeckType.TabIndex = 3
         Me.grpDeckType.TabStop = False
         Me.grpDeckType.Text = "Decking Type"
+        '
+        'radLumber
+        '
+        Me.radLumber.AutoSize = True
+        Me.radLumber.Location = New System.Drawing.Point(6, 29)
+        Me.radLumber.Name = "radLumber"
+        Me.radLumber.Size = New System.Drawing.Size(218, 27)
+        Me.radLumber.TabIndex = 0
+        Me.radLumber.TabStop = True
+        Me.radLumber.Text = "Pressure-Treated Lumber"
+        Me.radLumber.UseVisualStyleBackColor = True
         '
         'frmDecking
         '
@@ -83,6 +97,8 @@ Partial Class frmDecking
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmDecking"
         Me.Text = "Decking Cost Calculator"
+        Me.grpDeckType.ResumeLayout(False)
+        Me.grpDeckType.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -92,4 +108,5 @@ Partial Class frmDecking
     Friend WithEvents lblSquareFeet As Label
     Friend WithEvents txtFootage As TextBox
     Friend WithEvents grpDeckType As GroupBox
+    Friend WithEvents radLumber As RadioButton
 End Class
