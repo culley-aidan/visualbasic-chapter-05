@@ -28,6 +28,7 @@ Partial Class frmDecking
         Me.grpDeckType = New System.Windows.Forms.GroupBox()
         Me.radLumber = New System.Windows.Forms.RadioButton()
         Me.radRedwood = New System.Windows.Forms.RadioButton()
+        Me.radComposite = New System.Windows.Forms.RadioButton()
         Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -65,6 +66,7 @@ Partial Class frmDecking
         'grpDeckType
         '
         Me.grpDeckType.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDeckType.Controls.Add(Me.radComposite)
         Me.grpDeckType.Controls.Add(Me.radRedwood)
         Me.grpDeckType.Controls.Add(Me.radLumber)
         Me.grpDeckType.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -98,6 +100,17 @@ Partial Class frmDecking
         Me.radRedwood.Text = "Redwood"
         Me.radRedwood.UseVisualStyleBackColor = True
         '
+        'radComposite
+        '
+        Me.radComposite.AutoSize = True
+        Me.radComposite.Location = New System.Drawing.Point(6, 73)
+        Me.radComposite.Name = "radComposite"
+        Me.radComposite.Size = New System.Drawing.Size(111, 27)
+        Me.radComposite.TabIndex = 2
+        Me.radComposite.TabStop = True
+        Me.radComposite.Text = "Composite"
+        Me.radComposite.UseVisualStyleBackColor = True
+        '
         'frmDecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -123,4 +136,5 @@ Partial Class frmDecking
     Friend WithEvents grpDeckType As GroupBox
     Friend WithEvents radLumber As RadioButton
     Friend WithEvents radRedwood As RadioButton
+    Friend WithEvents radComposite As RadioButton
 End Class
