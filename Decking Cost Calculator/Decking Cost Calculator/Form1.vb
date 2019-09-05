@@ -48,4 +48,21 @@ Public Class frmDecking
             txtFootage.Focus()
         End If
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' This event handler is executed when the user clicks the Clear button. It
+        ' clears the square footage text box and the cost estimate label, resets the radio
+        ' buttons with lumber selected, and sets the focus to the square footage text box.
+
+        txtFootage.Clear()
+        lblCostEstimate.Text = ""
+        radLumber.Checked = True
+        radRedwood.Checked = False
+        radComposite.Checked = False
+        txtFootage.Focus()
+    End Sub
+
+    Private Sub FrmDecking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
