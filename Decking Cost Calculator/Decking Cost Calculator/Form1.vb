@@ -63,6 +63,11 @@ Public Class frmDecking
     End Sub
 
     Private Sub FrmDecking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' This event handler is executed when the form is loaded at the start of 
+        ' the program. it sets the focus to the square footage text box and
+        ' clears the cost estimate label.
 
+        txtFootage.Focus()
+        lblCostEstimate.Text = ""
     End Sub
 End Class
