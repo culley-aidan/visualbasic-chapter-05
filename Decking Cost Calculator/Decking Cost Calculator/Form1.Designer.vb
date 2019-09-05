@@ -23,6 +23,7 @@ Partial Class frmDecking
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblSquareFeet = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -36,12 +37,24 @@ Partial Class frmDecking
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Decking Cost Calculator"
         '
+        'lblSquareFeet
+        '
+        Me.lblSquareFeet.AutoSize = True
+        Me.lblSquareFeet.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSquareFeet.ForeColor = System.Drawing.Color.Sienna
+        Me.lblSquareFeet.Location = New System.Drawing.Point(19, 50)
+        Me.lblSquareFeet.Name = "lblSquareFeet"
+        Me.lblSquareFeet.Size = New System.Drawing.Size(141, 25)
+        Me.lblSquareFeet.TabIndex = 1
+        Me.lblSquareFeet.Text = "Square footage:"
+        '
         'frmDecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.lblSquareFeet)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmDecking"
         Me.Text = "Decking Cost Calculator"
@@ -51,4 +64,5 @@ Partial Class frmDecking
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblSquareFeet As Label
 End Class
