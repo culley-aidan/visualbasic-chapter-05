@@ -81,6 +81,7 @@ Partial Class frmDecking
         'radLumber
         '
         Me.radLumber.AutoSize = True
+        Me.radLumber.Checked = True
         Me.radLumber.Location = New System.Drawing.Point(6, 29)
         Me.radLumber.Name = "radLumber"
         Me.radLumber.Size = New System.Drawing.Size(218, 27)
