@@ -5,7 +5,7 @@
 '               number of square feet and the following cost per square foot: Lumber - $2.34 per square foot;
 '               Redwood - $7.75 per square foot; composite - $8.50 per square foot
 
-
+Option Strict On
 Public Class frmDecking
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
