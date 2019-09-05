@@ -25,6 +25,7 @@ Partial Class frmDecking
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblSquareFeet = New System.Windows.Forms.Label()
         Me.txtFootage = New System.Windows.Forms.TextBox()
+        Me.grpDeckType = New System.Windows.Forms.GroupBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -58,12 +59,25 @@ Partial Class frmDecking
         Me.txtFootage.TabIndex = 2
         Me.txtFootage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'grpDeckType
+        '
+        Me.grpDeckType.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDeckType.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpDeckType.ForeColor = System.Drawing.Color.Sienna
+        Me.grpDeckType.Location = New System.Drawing.Point(51, 102)
+        Me.grpDeckType.Name = "grpDeckType"
+        Me.grpDeckType.Size = New System.Drawing.Size(244, 106)
+        Me.grpDeckType.TabIndex = 3
+        Me.grpDeckType.TabStop = False
+        Me.grpDeckType.Text = "Decking Type"
+        '
         'frmDecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.grpDeckType)
         Me.Controls.Add(Me.txtFootage)
         Me.Controls.Add(Me.lblSquareFeet)
         Me.Controls.Add(Me.lblHeading)
@@ -77,4 +91,5 @@ Partial Class frmDecking
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblSquareFeet As Label
     Friend WithEvents txtFootage As TextBox
+    Friend WithEvents grpDeckType As GroupBox
 End Class
