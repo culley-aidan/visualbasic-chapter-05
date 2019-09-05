@@ -26,9 +26,9 @@ Partial Class frmDecking
         Me.lblSquareFeet = New System.Windows.Forms.Label()
         Me.txtFootage = New System.Windows.Forms.TextBox()
         Me.grpDeckType = New System.Windows.Forms.GroupBox()
-        Me.radLumber = New System.Windows.Forms.RadioButton()
-        Me.radRedwood = New System.Windows.Forms.RadioButton()
         Me.radComposite = New System.Windows.Forms.RadioButton()
+        Me.radRedwood = New System.Windows.Forms.RadioButton()
+        Me.radLumber = New System.Windows.Forms.RadioButton()
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblCostEstimate = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
@@ -84,17 +84,15 @@ Partial Class frmDecking
         Me.grpDeckType.TabStop = False
         Me.grpDeckType.Text = "Decking Type"
         '
-        'radLumber
+        'radComposite
         '
-        Me.radLumber.AutoSize = True
-        Me.radLumber.Checked = True
-        Me.radLumber.Location = New System.Drawing.Point(6, 29)
-        Me.radLumber.Name = "radLumber"
-        Me.radLumber.Size = New System.Drawing.Size(218, 27)
-        Me.radLumber.TabIndex = 0
-        Me.radLumber.TabStop = True
-        Me.radLumber.Text = "Pressure-Treated Lumber"
-        Me.radLumber.UseVisualStyleBackColor = True
+        Me.radComposite.AutoSize = True
+        Me.radComposite.Location = New System.Drawing.Point(6, 73)
+        Me.radComposite.Name = "radComposite"
+        Me.radComposite.Size = New System.Drawing.Size(111, 27)
+        Me.radComposite.TabIndex = 2
+        Me.radComposite.Text = "Composite"
+        Me.radComposite.UseVisualStyleBackColor = True
         '
         'radRedwood
         '
@@ -106,15 +104,17 @@ Partial Class frmDecking
         Me.radRedwood.Text = "Redwood"
         Me.radRedwood.UseVisualStyleBackColor = True
         '
-        'radComposite
+        'radLumber
         '
-        Me.radComposite.AutoSize = True
-        Me.radComposite.Location = New System.Drawing.Point(6, 73)
-        Me.radComposite.Name = "radComposite"
-        Me.radComposite.Size = New System.Drawing.Size(111, 27)
-        Me.radComposite.TabIndex = 2
-        Me.radComposite.Text = "Composite"
-        Me.radComposite.UseVisualStyleBackColor = True
+        Me.radLumber.AutoSize = True
+        Me.radLumber.Checked = True
+        Me.radLumber.Location = New System.Drawing.Point(6, 29)
+        Me.radLumber.Name = "radLumber"
+        Me.radLumber.Size = New System.Drawing.Size(218, 27)
+        Me.radLumber.TabIndex = 0
+        Me.radLumber.TabStop = True
+        Me.radLumber.Text = "Pressure-Treated Lumber"
+        Me.radLumber.UseVisualStyleBackColor = True
         '
         'lblCost
         '
