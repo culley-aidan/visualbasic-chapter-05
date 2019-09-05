@@ -32,6 +32,7 @@ Partial Class frmDecking
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblCostEstimate = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -146,12 +147,24 @@ Partial Class frmDecking
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.Sienna
+        Me.btnClear.Location = New System.Drawing.Point(207, 267)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(116, 41)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'frmDecking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblCostEstimate)
         Me.Controls.Add(Me.lblCost)
@@ -178,4 +191,5 @@ Partial Class frmDecking
     Friend WithEvents lblCost As Label
     Friend WithEvents lblCostEstimate As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnClear As Button
 End Class
