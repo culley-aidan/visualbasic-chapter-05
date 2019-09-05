@@ -30,6 +30,7 @@ Partial Class frmDecking
         Me.radRedwood = New System.Windows.Forms.RadioButton()
         Me.radComposite = New System.Windows.Forms.RadioButton()
         Me.lblCost = New System.Windows.Forms.Label()
+        Me.lblCostEstimate = New System.Windows.Forms.Label()
         Me.grpDeckType.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -116,11 +117,22 @@ Partial Class frmDecking
         Me.lblCost.AutoSize = True
         Me.lblCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCost.ForeColor = System.Drawing.Color.Sienna
-        Me.lblCost.Location = New System.Drawing.Point(46, 225)
+        Me.lblCost.Location = New System.Drawing.Point(35, 225)
         Me.lblCost.Name = "lblCost"
         Me.lblCost.Size = New System.Drawing.Size(133, 25)
         Me.lblCost.TabIndex = 4
         Me.lblCost.Text = "Cost Estimate:"
+        '
+        'lblCostEstimate
+        '
+        Me.lblCostEstimate.AutoSize = True
+        Me.lblCostEstimate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostEstimate.ForeColor = System.Drawing.Color.Sienna
+        Me.lblCostEstimate.Location = New System.Drawing.Point(202, 225)
+        Me.lblCostEstimate.Name = "lblCostEstimate"
+        Me.lblCostEstimate.Size = New System.Drawing.Size(93, 25)
+        Me.lblCostEstimate.TabIndex = 5
+        Me.lblCostEstimate.Text = "$0000.00"
         '
         'frmDecking
         '
@@ -128,6 +140,7 @@ Partial Class frmDecking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(704, 392)
+        Me.Controls.Add(Me.lblCostEstimate)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.grpDeckType)
         Me.Controls.Add(Me.txtFootage)
@@ -150,4 +163,5 @@ Partial Class frmDecking
     Friend WithEvents radRedwood As RadioButton
     Friend WithEvents radComposite As RadioButton
     Friend WithEvents lblCost As Label
+    Friend WithEvents lblCostEstimate As Label
 End Class
