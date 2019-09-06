@@ -18,9 +18,9 @@ Public Class frmLondonTubeTickets
         Dim decZone13 As Decimal = 4.9D
         Dim decZone15 As Decimal = 5.9D
         Dim decZone16 As Decimal = 6D
-        Dim decUSZone13 As Decimal = 5.41D
-        Dim decUSZone15 As Decimal = 6.51D
-        Dim decUSZone16 As Decimal = 6.62D
+        Dim decUSZone13 As Decimal = 6.03D
+        Dim decUSZone15 As Decimal = 7.26D
+        Dim decUSZone16 As Decimal = 7.39D
 
         If IsNumeric(txtTicketCount.Text) Then
             intTicketCount = Convert.ToInt32(txtTicketCount.Text)
@@ -37,7 +37,7 @@ Public Class frmLondonTubeTickets
                 End If
                 decTotalCost = Math.Round(decCostPerTicket * intTicketCount, 2)
                 decUSTotalCost = Math.Round(decUSCostPerTicket * intTicketCount, 2)
-                lblTotalCost.Text = String.Format("${0} (€{1})", decUSTotalCost, decTotalCost)
+                lblTotalCost.Text = String.Format("${0} (£{1})", decUSTotalCost, decTotalCost)
             Else
                 MsgBox("You entered " & intTicketCount.ToString() & ", Enter a positive number", , "Input Error")
                 txtTicketCount.Text = ""
