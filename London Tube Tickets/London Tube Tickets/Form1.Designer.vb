@@ -31,6 +31,7 @@ Partial Class frmLondonTubeTickets
         Me.radZones16 = New System.Windows.Forms.RadioButton()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.lblCost = New System.Windows.Forms.Label()
         Me.grpTicketzones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -136,12 +137,24 @@ Partial Class frmLondonTubeTickets
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'lblCost
+        '
+        Me.lblCost.AutoSize = True
+        Me.lblCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.ForeColor = System.Drawing.Color.Sienna
+        Me.lblCost.Location = New System.Drawing.Point(20, 292)
+        Me.lblCost.Name = "lblCost"
+        Me.lblCost.Size = New System.Drawing.Size(105, 25)
+        Me.lblCost.TabIndex = 6
+        Me.lblCost.Text = "Total Cost:"
+        '
         'frmLondonTubeTickets
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.grpTicketzones)
@@ -166,4 +179,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents radZones16 As RadioButton
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents lblCost As Label
 End Class
