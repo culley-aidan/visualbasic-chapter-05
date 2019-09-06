@@ -31,6 +31,7 @@ Partial Class frmComicConvention
         Me.radConvention = New System.Windows.Forms.RadioButton()
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.grpBadges.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -133,12 +134,24 @@ Partial Class frmComicConvention
         Me.lblTotalCost.TabIndex = 5
         Me.lblTotalCost.Text = "$0000.00"
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.Sienna
+        Me.btnCalculate.Location = New System.Drawing.Point(36, 310)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(118, 38)
+        Me.btnCalculate.TabIndex = 6
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmComicConvention
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.grpBadges)
@@ -163,4 +176,5 @@ Partial Class frmComicConvention
     Friend WithEvents radConvention As RadioButton
     Friend WithEvents lblCost As Label
     Friend WithEvents lblTotalCost As Label
+    Friend WithEvents btnCalculate As Button
 End Class
