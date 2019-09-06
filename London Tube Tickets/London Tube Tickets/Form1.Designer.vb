@@ -29,6 +29,7 @@ Partial Class frmLondonTubeTickets
         Me.radZones13 = New System.Windows.Forms.RadioButton()
         Me.radZones15 = New System.Windows.Forms.RadioButton()
         Me.radZones16 = New System.Windows.Forms.RadioButton()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.grpTicketzones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -112,12 +113,24 @@ Partial Class frmLondonTubeTickets
         Me.radZones16.Text = "Zones 1-6"
         Me.radZones16.UseVisualStyleBackColor = True
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.Sienna
+        Me.btnCalculate.Location = New System.Drawing.Point(18, 371)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(119, 43)
+        Me.btnCalculate.TabIndex = 4
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmLondonTubeTickets
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.grpTicketzones)
         Me.Controls.Add(Me.txtTicketCount)
         Me.Controls.Add(Me.lblTicketCount)
@@ -138,4 +151,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents radZones13 As RadioButton
     Friend WithEvents radZones15 As RadioButton
     Friend WithEvents radZones16 As RadioButton
+    Friend WithEvents btnCalculate As Button
 End Class
