@@ -30,6 +30,7 @@ Partial Class frmComicConvention
         Me.radAutographs = New System.Windows.Forms.RadioButton()
         Me.radConvention = New System.Windows.Forms.RadioButton()
         Me.lblCost = New System.Windows.Forms.Label()
+        Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.grpBadges.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -117,9 +118,20 @@ Partial Class frmComicConvention
         Me.lblCost.ForeColor = System.Drawing.Color.Sienna
         Me.lblCost.Location = New System.Drawing.Point(49, 261)
         Me.lblCost.Name = "lblCost"
-        Me.lblCost.Size = New System.Drawing.Size(100, 25)
+        Me.lblCost.Size = New System.Drawing.Size(105, 25)
         Me.lblCost.TabIndex = 4
-        Me.lblCost.Text = "Total Cost"
+        Me.lblCost.Text = "Total Cost:"
+        '
+        'lblTotalCost
+        '
+        Me.lblTotalCost.AutoSize = True
+        Me.lblTotalCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.ForeColor = System.Drawing.Color.Sienna
+        Me.lblTotalCost.Location = New System.Drawing.Point(267, 261)
+        Me.lblTotalCost.Name = "lblTotalCost"
+        Me.lblTotalCost.Size = New System.Drawing.Size(93, 25)
+        Me.lblTotalCost.TabIndex = 5
+        Me.lblTotalCost.Text = "$0000.00"
         '
         'frmComicConvention
         '
@@ -127,6 +139,7 @@ Partial Class frmComicConvention
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.grpBadges)
         Me.Controls.Add(Me.txtAttendees)
@@ -149,4 +162,5 @@ Partial Class frmComicConvention
     Friend WithEvents radAutographs As RadioButton
     Friend WithEvents radConvention As RadioButton
     Friend WithEvents lblCost As Label
+    Friend WithEvents lblTotalCost As Label
 End Class
