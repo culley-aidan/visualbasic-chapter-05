@@ -86,6 +86,7 @@ Partial Class frmLondonTubeTickets
         'radZones13
         '
         Me.radZones13.AutoSize = True
+        Me.radZones13.Checked = True
         Me.radZones13.Location = New System.Drawing.Point(6, 29)
         Me.radZones13.Name = "radZones13"
         Me.radZones13.Size = New System.Drawing.Size(101, 27)
