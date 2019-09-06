@@ -52,4 +52,12 @@ Public Class frmComicConvention
         radConvention.Checked = True
         txtAttendees.Focus()
     End Sub
+
+    Private Sub FrmComicConvention_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' This event handler is executed when the form is loaded at the start of
+        ' the program.
+
+        txtAttendees.Focus()
+        lblTotalCost.Text = ""
+    End Sub
 End Class
