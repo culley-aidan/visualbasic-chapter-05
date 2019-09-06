@@ -29,6 +29,7 @@ Partial Class frmComicConvention
         Me.radSuperHero = New System.Windows.Forms.RadioButton()
         Me.radAutographs = New System.Windows.Forms.RadioButton()
         Me.radConvention = New System.Windows.Forms.RadioButton()
+        Me.lblCost = New System.Windows.Forms.Label()
         Me.grpBadges.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,9 +71,9 @@ Partial Class frmComicConvention
         Me.grpBadges.Controls.Add(Me.radSuperHero)
         Me.grpBadges.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpBadges.ForeColor = System.Drawing.Color.Sienna
-        Me.grpBadges.Location = New System.Drawing.Point(56, 131)
+        Me.grpBadges.Location = New System.Drawing.Point(48, 110)
         Me.grpBadges.Name = "grpBadges"
-        Me.grpBadges.Size = New System.Drawing.Size(384, 131)
+        Me.grpBadges.Size = New System.Drawing.Size(320, 131)
         Me.grpBadges.TabIndex = 3
         Me.grpBadges.TabStop = False
         Me.grpBadges.Text = "Badge Type"
@@ -84,7 +85,6 @@ Partial Class frmComicConvention
         Me.radSuperHero.Name = "radSuperHero"
         Me.radSuperHero.Size = New System.Drawing.Size(306, 27)
         Me.radSuperHero.TabIndex = 0
-        Me.radSuperHero.TabStop = True
         Me.radSuperHero.Text = "Convention + Superhero Experience"
         Me.radSuperHero.UseVisualStyleBackColor = True
         '
@@ -95,13 +95,13 @@ Partial Class frmComicConvention
         Me.radAutographs.Name = "radAutographs"
         Me.radAutographs.Size = New System.Drawing.Size(226, 27)
         Me.radAutographs.TabIndex = 1
-        Me.radAutographs.TabStop = True
         Me.radAutographs.Text = "Convention + Autographs"
         Me.radAutographs.UseVisualStyleBackColor = True
         '
         'radConvention
         '
         Me.radConvention.AutoSize = True
+        Me.radConvention.Checked = True
         Me.radConvention.Location = New System.Drawing.Point(6, 97)
         Me.radConvention.Name = "radConvention"
         Me.radConvention.Size = New System.Drawing.Size(118, 27)
@@ -110,12 +110,24 @@ Partial Class frmComicConvention
         Me.radConvention.Text = "Convention"
         Me.radConvention.UseVisualStyleBackColor = True
         '
+        'lblCost
+        '
+        Me.lblCost.AutoSize = True
+        Me.lblCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.ForeColor = System.Drawing.Color.Sienna
+        Me.lblCost.Location = New System.Drawing.Point(49, 261)
+        Me.lblCost.Name = "lblCost"
+        Me.lblCost.Size = New System.Drawing.Size(100, 25)
+        Me.lblCost.TabIndex = 4
+        Me.lblCost.Text = "Total Cost"
+        '
         'frmComicConvention
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.grpBadges)
         Me.Controls.Add(Me.txtAttendees)
         Me.Controls.Add(Me.lblAttendees)
@@ -136,4 +148,5 @@ Partial Class frmComicConvention
     Friend WithEvents radSuperHero As RadioButton
     Friend WithEvents radAutographs As RadioButton
     Friend WithEvents radConvention As RadioButton
+    Friend WithEvents lblCost As Label
 End Class
