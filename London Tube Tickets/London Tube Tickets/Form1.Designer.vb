@@ -26,6 +26,8 @@ Partial Class frmLondonTubeTickets
         Me.lblTicketCount = New System.Windows.Forms.Label()
         Me.txtTicketCount = New System.Windows.Forms.TextBox()
         Me.grpTicketzones = New System.Windows.Forms.GroupBox()
+        Me.radZones13 = New System.Windows.Forms.RadioButton()
+        Me.grpTicketzones.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -63,14 +65,26 @@ Partial Class frmLondonTubeTickets
         'grpTicketzones
         '
         Me.grpTicketzones.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpTicketzones.Controls.Add(Me.radZones13)
         Me.grpTicketzones.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpTicketzones.ForeColor = System.Drawing.Color.Sienna
         Me.grpTicketzones.Location = New System.Drawing.Point(18, 136)
         Me.grpTicketzones.Name = "grpTicketzones"
-        Me.grpTicketzones.Size = New System.Drawing.Size(278, 100)
+        Me.grpTicketzones.Size = New System.Drawing.Size(278, 109)
         Me.grpTicketzones.TabIndex = 3
         Me.grpTicketzones.TabStop = False
         Me.grpTicketzones.Text = "Ticket Zones"
+        '
+        'radZones13
+        '
+        Me.radZones13.AutoSize = True
+        Me.radZones13.Location = New System.Drawing.Point(6, 29)
+        Me.radZones13.Name = "radZones13"
+        Me.radZones13.Size = New System.Drawing.Size(101, 27)
+        Me.radZones13.TabIndex = 0
+        Me.radZones13.TabStop = True
+        Me.radZones13.Text = "Zones 1-3"
+        Me.radZones13.UseVisualStyleBackColor = True
         '
         'frmLondonTubeTickets
         '
@@ -84,6 +98,8 @@ Partial Class frmLondonTubeTickets
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmLondonTubeTickets"
         Me.Text = "London Tube Tickets"
+        Me.grpTicketzones.ResumeLayout(False)
+        Me.grpTicketzones.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -93,4 +109,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents lblTicketCount As Label
     Friend WithEvents txtTicketCount As TextBox
     Friend WithEvents grpTicketzones As GroupBox
+    Friend WithEvents radZones13 As RadioButton
 End Class
