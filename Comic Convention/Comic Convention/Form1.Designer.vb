@@ -26,6 +26,8 @@ Partial Class frmComicConvention
         Me.lblAttendees = New System.Windows.Forms.Label()
         Me.txtAttendees = New System.Windows.Forms.TextBox()
         Me.grpBadges = New System.Windows.Forms.GroupBox()
+        Me.radSuperHero = New System.Windows.Forms.RadioButton()
+        Me.grpBadges.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -61,14 +63,26 @@ Partial Class frmComicConvention
         'grpBadges
         '
         Me.grpBadges.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpBadges.Controls.Add(Me.radSuperHero)
         Me.grpBadges.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpBadges.ForeColor = System.Drawing.Color.Sienna
         Me.grpBadges.Location = New System.Drawing.Point(56, 131)
         Me.grpBadges.Name = "grpBadges"
-        Me.grpBadges.Size = New System.Drawing.Size(244, 106)
+        Me.grpBadges.Size = New System.Drawing.Size(384, 106)
         Me.grpBadges.TabIndex = 3
         Me.grpBadges.TabStop = False
         Me.grpBadges.Text = "Badge Type"
+        '
+        'radSuperHero
+        '
+        Me.radSuperHero.AutoSize = True
+        Me.radSuperHero.Location = New System.Drawing.Point(6, 29)
+        Me.radSuperHero.Name = "radSuperHero"
+        Me.radSuperHero.Size = New System.Drawing.Size(306, 27)
+        Me.radSuperHero.TabIndex = 0
+        Me.radSuperHero.TabStop = True
+        Me.radSuperHero.Text = "Convention + Superhero Experience"
+        Me.radSuperHero.UseVisualStyleBackColor = True
         '
         'frmComicConvention
         '
@@ -82,6 +96,8 @@ Partial Class frmComicConvention
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmComicConvention"
         Me.Text = "Comic Convention"
+        Me.grpBadges.ResumeLayout(False)
+        Me.grpBadges.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -91,4 +107,5 @@ Partial Class frmComicConvention
     Friend WithEvents lblAttendees As Label
     Friend WithEvents txtAttendees As TextBox
     Friend WithEvents grpBadges As GroupBox
+    Friend WithEvents radSuperHero As RadioButton
 End Class
