@@ -24,6 +24,7 @@ Partial Class frmComicConvention
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblAttendees = New System.Windows.Forms.Label()
+        Me.txtAttendees = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -48,12 +49,21 @@ Partial Class frmComicConvention
         Me.lblAttendees.TabIndex = 1
         Me.lblAttendees.Text = "Group Member Count:"
         '
+        'txtAttendees
+        '
+        Me.txtAttendees.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAttendees.Location = New System.Drawing.Point(242, 71)
+        Me.txtAttendees.Name = "txtAttendees"
+        Me.txtAttendees.Size = New System.Drawing.Size(58, 33)
+        Me.txtAttendees.TabIndex = 2
+        '
         'frmComicConvention
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtAttendees)
         Me.Controls.Add(Me.lblAttendees)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmComicConvention"
@@ -65,4 +75,5 @@ Partial Class frmComicConvention
 
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblAttendees As Label
+    Friend WithEvents txtAttendees As TextBox
 End Class
