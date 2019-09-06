@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmLondonTubeTickets
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,14 @@ Partial Class frmLondonTubeTickets
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblTicketCount = New System.Windows.Forms.Label()
         Me.txtTicketCount = New System.Windows.Forms.TextBox()
         Me.grpTicketzones = New System.Windows.Forms.GroupBox()
         Me.radZones13 = New System.Windows.Forms.RadioButton()
+        Me.radZones15 = New System.Windows.Forms.RadioButton()
         Me.grpTicketzones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -65,6 +66,7 @@ Partial Class frmLondonTubeTickets
         'grpTicketzones
         '
         Me.grpTicketzones.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpTicketzones.Controls.Add(Me.radZones15)
         Me.grpTicketzones.Controls.Add(Me.radZones13)
         Me.grpTicketzones.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpTicketzones.ForeColor = System.Drawing.Color.Sienna
@@ -85,6 +87,17 @@ Partial Class frmLondonTubeTickets
         Me.radZones13.TabStop = True
         Me.radZones13.Text = "Zones 1-3"
         Me.radZones13.UseVisualStyleBackColor = True
+        '
+        'radZones15
+        '
+        Me.radZones15.AutoSize = True
+        Me.radZones15.Location = New System.Drawing.Point(171, 29)
+        Me.radZones15.Name = "radZones15"
+        Me.radZones15.Size = New System.Drawing.Size(101, 27)
+        Me.radZones15.TabIndex = 1
+        Me.radZones15.TabStop = True
+        Me.radZones15.Text = "Zones 1-5"
+        Me.radZones15.UseVisualStyleBackColor = True
         '
         'frmLondonTubeTickets
         '
@@ -110,4 +123,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents txtTicketCount As TextBox
     Friend WithEvents grpTicketzones As GroupBox
     Friend WithEvents radZones13 As RadioButton
+    Friend WithEvents radZones15 As RadioButton
 End Class
