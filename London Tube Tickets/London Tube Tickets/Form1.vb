@@ -49,4 +49,14 @@ Public Class frmLondonTubeTickets
             txtTicketCount.Focus()
         End If
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' this event handler is executed when the user clicks the clear button
+        txtTicketCount.Clear()
+        lblTotalCost.Text = ""
+        radZones13.Checked = True
+        radZones15.Checked = False
+        radZones16.Checked = False
+        txtTicketCount.Focus()
+    End Sub
 End Class
