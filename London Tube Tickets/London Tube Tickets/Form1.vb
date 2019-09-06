@@ -7,6 +7,46 @@
 Option Strict On
 Public Class frmLondonTubeTickets
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        ' The btnCalculate event handler calculates the estimated cost of 
+        ' tickets based on ticket count and zones covered.
 
+        Dim intTicketCount As Integer
+        Dim decCostPerTicket As Decimal
+        Dim decUSCostPerTicket As Decimal
+        Dim decTotalCost As Decimal
+        Dim decUSTotalCost As Decimal
+        Dim decZone13 As Decimal = 4.9D
+        Dim decZone15 As Decimal = 5.9D
+        Dim decZone16 As Decimal = 6D
+        Dim decUSZone13 As Decimal = 5.41D
+        Dim decUSZone15 As Decimal = 6.51D
+        Dim decUSZone16 As Decimal = 6.62D
+
+        If IsNumeric(txtTicketCount.Text) Then
+            intTicketCount = Convert.ToInt32(txtTicketCount.Text)
+            If intTicketCount > 0 Then
+                If radZones13.Checked Then
+                    decCostPerTicket = decZone13
+                    decUSCostPerTicket = decUSZone13
+                ElseIf radZones15.Checked Then
+                    decCostPerTicket = decZone15
+                    decUSCostPerTicket = decUSZone15
+                ElseIf radZones16.Checked Then
+                    decCostPerTicket = decZone16
+                    decUSCostPerTicket = decUSZone16
+                End If
+                decTotalCost = Math.Round(decCostPerTicket * intTicketCount, 2)
+                decUSTotalCost = Math.Round(decUSCostPerTicket * intTicketCount, 2)
+                lblTotalCost.Text = String.Format("${0} (€{1})", decUSTotalCost, decTotalCost)
+            Else
+                MsgBox("You entered " & intTicketCount.ToString() & ", Enter a positive number", , "Input Error")
+                txtTicketCount.Text = ""
+                txtTicketCount.Focus()
+            End If
+        Else
+            MsgBox("Enter the total ticket amount", , "Input Error")
+            txtTicketCount.Text = ""
+            txtTicketCount.Focus()
+        End If
     End Sub
 End Class
