@@ -23,6 +23,7 @@ Partial Class frmLondonTubeTickets
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblTicketCount = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -36,12 +37,24 @@ Partial Class frmLondonTubeTickets
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "London Tube Tickets"
         '
+        'lblTicketCount
+        '
+        Me.lblTicketCount.AutoSize = True
+        Me.lblTicketCount.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTicketCount.ForeColor = System.Drawing.Color.Sienna
+        Me.lblTicketCount.Location = New System.Drawing.Point(18, 49)
+        Me.lblTicketCount.Name = "lblTicketCount"
+        Me.lblTicketCount.Size = New System.Drawing.Size(179, 25)
+        Me.lblTicketCount.TabIndex = 1
+        Me.lblTicketCount.Text = "Number of Tickets: "
+        '
         'frmLondonTubeTickets
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTicketCount)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmLondonTubeTickets"
         Me.Text = "London Tube Tickets"
@@ -51,4 +64,5 @@ Partial Class frmLondonTubeTickets
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblTicketCount As Label
 End Class
