@@ -33,7 +33,9 @@ Partial Class frmComicConvention
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.picComic = New System.Windows.Forms.PictureBox()
         Me.grpBadges.SuspendLayout()
+        CType(Me.picComic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -157,12 +159,23 @@ Partial Class frmComicConvention
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'picComic
+        '
+        Me.picComic.Image = Global.Comic_Convention.My.Resources.Resources.comic
+        Me.picComic.Location = New System.Drawing.Point(398, 90)
+        Me.picComic.Name = "picComic"
+        Me.picComic.Size = New System.Drawing.Size(402, 232)
+        Me.picComic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picComic.TabIndex = 8
+        Me.picComic.TabStop = False
+        '
         'frmComicConvention
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.picComic)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTotalCost)
@@ -175,6 +188,7 @@ Partial Class frmComicConvention
         Me.Text = "Comic Convention"
         Me.grpBadges.ResumeLayout(False)
         Me.grpBadges.PerformLayout()
+        CType(Me.picComic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -191,4 +205,5 @@ Partial Class frmComicConvention
     Friend WithEvents lblTotalCost As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents picComic As PictureBox
 End Class
