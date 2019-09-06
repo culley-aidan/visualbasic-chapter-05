@@ -40,4 +40,16 @@ Public Class frmComicConvention
             txtAttendees.Focus()
         End If
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' This event handler is executed when the user clicks the clear button. It
+        ' clears the text box and total cost label and resets the radio buttons.
+
+        txtAttendees.Clear()
+        lblTotalCost.Text = ""
+        radSuperHero.Checked = False
+        radAutographs.Checked = False
+        radConvention.Checked = True
+        txtAttendees.Focus()
+    End Sub
 End Class
