@@ -23,6 +23,7 @@ Partial Class frmBroadwayDiscount
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblGroupCount = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -36,12 +37,24 @@ Partial Class frmBroadwayDiscount
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Broadway Ticket Group Discount"
         '
+        'lblGroupCount
+        '
+        Me.lblGroupCount.AutoSize = True
+        Me.lblGroupCount.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGroupCount.ForeColor = System.Drawing.Color.Sienna
+        Me.lblGroupCount.Location = New System.Drawing.Point(14, 49)
+        Me.lblGroupCount.Name = "lblGroupCount"
+        Me.lblGroupCount.Size = New System.Drawing.Size(204, 25)
+        Me.lblGroupCount.TabIndex = 1
+        Me.lblGroupCount.Text = "Group Member Count"
+        '
         'frmBroadwayDiscount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblGroupCount)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmBroadwayDiscount"
         Me.Text = "Broadway Ticket Group Discount"
@@ -51,4 +64,5 @@ Partial Class frmBroadwayDiscount
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblGroupCount As Label
 End Class
