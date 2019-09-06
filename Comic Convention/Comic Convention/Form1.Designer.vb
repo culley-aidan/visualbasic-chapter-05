@@ -32,6 +32,7 @@ Partial Class frmComicConvention
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.grpBadges.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -138,12 +139,23 @@ Partial Class frmComicConvention
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalculate.ForeColor = System.Drawing.Color.Sienna
-        Me.btnCalculate.Location = New System.Drawing.Point(36, 310)
+        Me.btnCalculate.Location = New System.Drawing.Point(48, 312)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(118, 38)
         Me.btnCalculate.TabIndex = 6
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.Sienna
+        Me.btnClear.Location = New System.Drawing.Point(250, 312)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(118, 38)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'frmComicConvention
         '
@@ -151,6 +163,7 @@ Partial Class frmComicConvention
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCost)
@@ -177,4 +190,5 @@ Partial Class frmComicConvention
     Friend WithEvents lblCost As Label
     Friend WithEvents lblTotalCost As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnClear As Button
 End Class
