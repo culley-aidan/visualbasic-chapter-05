@@ -28,6 +28,7 @@ Partial Class frmLondonTubeTickets
         Me.grpTicketzones = New System.Windows.Forms.GroupBox()
         Me.radZones13 = New System.Windows.Forms.RadioButton()
         Me.radZones15 = New System.Windows.Forms.RadioButton()
+        Me.radZones16 = New System.Windows.Forms.RadioButton()
         Me.grpTicketzones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,6 +67,7 @@ Partial Class frmLondonTubeTickets
         'grpTicketzones
         '
         Me.grpTicketzones.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpTicketzones.Controls.Add(Me.radZones16)
         Me.grpTicketzones.Controls.Add(Me.radZones15)
         Me.grpTicketzones.Controls.Add(Me.radZones13)
         Me.grpTicketzones.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -99,6 +101,17 @@ Partial Class frmLondonTubeTickets
         Me.radZones15.Text = "Zones 1-5"
         Me.radZones15.UseVisualStyleBackColor = True
         '
+        'radZones16
+        '
+        Me.radZones16.AutoSize = True
+        Me.radZones16.Location = New System.Drawing.Point(85, 62)
+        Me.radZones16.Name = "radZones16"
+        Me.radZones16.Size = New System.Drawing.Size(101, 27)
+        Me.radZones16.TabIndex = 2
+        Me.radZones16.TabStop = True
+        Me.radZones16.Text = "Zones 1-6"
+        Me.radZones16.UseVisualStyleBackColor = True
+        '
         'frmLondonTubeTickets
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,4 +137,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents grpTicketzones As GroupBox
     Friend WithEvents radZones13 As RadioButton
     Friend WithEvents radZones15 As RadioButton
+    Friend WithEvents radZones16 As RadioButton
 End Class
