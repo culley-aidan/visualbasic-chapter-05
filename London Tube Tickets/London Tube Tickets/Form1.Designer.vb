@@ -32,6 +32,7 @@ Partial Class frmLondonTubeTickets
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.lblCost = New System.Windows.Forms.Label()
+        Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.grpTicketzones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -148,12 +149,24 @@ Partial Class frmLondonTubeTickets
         Me.lblCost.TabIndex = 6
         Me.lblCost.Text = "Total Cost:"
         '
+        'lblTotalCost
+        '
+        Me.lblTotalCost.AutoSize = True
+        Me.lblTotalCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.ForeColor = System.Drawing.Color.Sienna
+        Me.lblTotalCost.Location = New System.Drawing.Point(203, 292)
+        Me.lblTotalCost.Name = "lblTotalCost"
+        Me.lblTotalCost.Size = New System.Drawing.Size(93, 25)
+        Me.lblTotalCost.TabIndex = 7
+        Me.lblTotalCost.Text = "$0000.00"
+        '
         'frmLondonTubeTickets
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
@@ -180,4 +193,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents lblCost As Label
+    Friend WithEvents lblTotalCost As Label
 End Class
