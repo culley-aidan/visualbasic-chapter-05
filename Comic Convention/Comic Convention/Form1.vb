@@ -6,4 +6,38 @@
 
 Option Strict On
 Public Class frmComicConvention
+    Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        ' The btnCalculate event handler calculates the estimated cost of 
+        ' registration cost for the group attending
+
+        Dim intAttendees As Integer
+        Dim decBadgeCost As Decimal
+        Dim dectotalCost As Decimal
+        Dim intSuperhero As Integer = 380
+        Dim intAutographs As Integer = 275
+        Dim intConvention As Integer = 209
+
+        If IsNumeric(txtAttendees.Text) Then
+            intAttendees = Convert.ToInt32(txtAttendees.Text)
+            If intAttendees > 0 And intAttendees < 20 Then
+                If radSuperHero.Checked Then
+                    decBadgeCost = intSuperhero
+                ElseIf radAutographs.Checked Then
+                    decBadgeCost = intAutographs
+                ElseIf radConvention.Checked Then
+                    decBadgeCost = intConvention
+                End If
+                dectotalCost = intAttendees * decBadgeCost
+                lblTotalCost.Text = dectotalCost.ToString("C")
+            Else
+                MsgBox("You entered " & intAttendees.ToString() & ", Enter a valid entry", , "Input Error")
+                txtAttendees.Text = ""
+                txtAttendees.Focus()
+            End If
+        Else
+            MsgBox("Enter the total group size", , "Input Error")
+            txtAttendees.Text = ""
+            txtAttendees.Focus()
+        End If
+    End Sub
 End Class

@@ -26,9 +26,9 @@ Partial Class frmComicConvention
         Me.lblAttendees = New System.Windows.Forms.Label()
         Me.txtAttendees = New System.Windows.Forms.TextBox()
         Me.grpBadges = New System.Windows.Forms.GroupBox()
-        Me.radSuperHero = New System.Windows.Forms.RadioButton()
-        Me.radAutographs = New System.Windows.Forms.RadioButton()
         Me.radConvention = New System.Windows.Forms.RadioButton()
+        Me.radAutographs = New System.Windows.Forms.RadioButton()
+        Me.radSuperHero = New System.Windows.Forms.RadioButton()
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
@@ -83,26 +83,6 @@ Partial Class frmComicConvention
         Me.grpBadges.TabStop = False
         Me.grpBadges.Text = "Badge Type"
         '
-        'radSuperHero
-        '
-        Me.radSuperHero.AutoSize = True
-        Me.radSuperHero.Location = New System.Drawing.Point(6, 29)
-        Me.radSuperHero.Name = "radSuperHero"
-        Me.radSuperHero.Size = New System.Drawing.Size(306, 27)
-        Me.radSuperHero.TabIndex = 0
-        Me.radSuperHero.Text = "Convention + Superhero Experience"
-        Me.radSuperHero.UseVisualStyleBackColor = True
-        '
-        'radAutographs
-        '
-        Me.radAutographs.AutoSize = True
-        Me.radAutographs.Location = New System.Drawing.Point(6, 63)
-        Me.radAutographs.Name = "radAutographs"
-        Me.radAutographs.Size = New System.Drawing.Size(226, 27)
-        Me.radAutographs.TabIndex = 1
-        Me.radAutographs.Text = "Convention + Autographs"
-        Me.radAutographs.UseVisualStyleBackColor = True
-        '
         'radConvention
         '
         Me.radConvention.AutoSize = True
@@ -114,6 +94,26 @@ Partial Class frmComicConvention
         Me.radConvention.TabStop = True
         Me.radConvention.Text = "Convention"
         Me.radConvention.UseVisualStyleBackColor = True
+        '
+        'radAutographs
+        '
+        Me.radAutographs.AutoSize = True
+        Me.radAutographs.Location = New System.Drawing.Point(6, 63)
+        Me.radAutographs.Name = "radAutographs"
+        Me.radAutographs.Size = New System.Drawing.Size(226, 27)
+        Me.radAutographs.TabIndex = 1
+        Me.radAutographs.Text = "Convention + Autographs"
+        Me.radAutographs.UseVisualStyleBackColor = True
+        '
+        'radSuperHero
+        '
+        Me.radSuperHero.AutoSize = True
+        Me.radSuperHero.Location = New System.Drawing.Point(6, 29)
+        Me.radSuperHero.Name = "radSuperHero"
+        Me.radSuperHero.Size = New System.Drawing.Size(306, 27)
+        Me.radSuperHero.TabIndex = 0
+        Me.radSuperHero.Text = "Convention + Superhero Experience"
+        Me.radSuperHero.UseVisualStyleBackColor = True
         '
         'lblCost
         '
