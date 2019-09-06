@@ -25,6 +25,7 @@ Partial Class frmLondonTubeTickets
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblTicketCount = New System.Windows.Forms.Label()
         Me.txtTicketCount = New System.Windows.Forms.TextBox()
+        Me.grpTicketzones = New System.Windows.Forms.GroupBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -59,12 +60,25 @@ Partial Class frmLondonTubeTickets
         Me.txtTicketCount.Size = New System.Drawing.Size(58, 33)
         Me.txtTicketCount.TabIndex = 2
         '
+        'grpTicketzones
+        '
+        Me.grpTicketzones.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpTicketzones.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpTicketzones.ForeColor = System.Drawing.Color.Sienna
+        Me.grpTicketzones.Location = New System.Drawing.Point(18, 136)
+        Me.grpTicketzones.Name = "grpTicketzones"
+        Me.grpTicketzones.Size = New System.Drawing.Size(278, 100)
+        Me.grpTicketzones.TabIndex = 3
+        Me.grpTicketzones.TabStop = False
+        Me.grpTicketzones.Text = "Ticket Zones"
+        '
         'frmLondonTubeTickets
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.grpTicketzones)
         Me.Controls.Add(Me.txtTicketCount)
         Me.Controls.Add(Me.lblTicketCount)
         Me.Controls.Add(Me.lblHeading)
@@ -78,4 +92,5 @@ Partial Class frmLondonTubeTickets
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblTicketCount As Label
     Friend WithEvents txtTicketCount As TextBox
+    Friend WithEvents grpTicketzones As GroupBox
 End Class
