@@ -4,5 +4,6 @@
 ' Purpose:      This windows application computes the estimated cost of group convention
 '               tickets ased on what badge the group is using
 
+Option Strict On
 Public Class frmComicConvention
 End Class
