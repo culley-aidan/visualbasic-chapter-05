@@ -28,6 +28,7 @@ Partial Class frmComicConvention
         Me.grpBadges = New System.Windows.Forms.GroupBox()
         Me.radSuperHero = New System.Windows.Forms.RadioButton()
         Me.radAutographs = New System.Windows.Forms.RadioButton()
+        Me.radConvention = New System.Windows.Forms.RadioButton()
         Me.grpBadges.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,13 +65,14 @@ Partial Class frmComicConvention
         'grpBadges
         '
         Me.grpBadges.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpBadges.Controls.Add(Me.radConvention)
         Me.grpBadges.Controls.Add(Me.radAutographs)
         Me.grpBadges.Controls.Add(Me.radSuperHero)
         Me.grpBadges.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpBadges.ForeColor = System.Drawing.Color.Sienna
         Me.grpBadges.Location = New System.Drawing.Point(56, 131)
         Me.grpBadges.Name = "grpBadges"
-        Me.grpBadges.Size = New System.Drawing.Size(384, 123)
+        Me.grpBadges.Size = New System.Drawing.Size(384, 131)
         Me.grpBadges.TabIndex = 3
         Me.grpBadges.TabStop = False
         Me.grpBadges.Text = "Badge Type"
@@ -97,6 +99,17 @@ Partial Class frmComicConvention
         Me.radAutographs.Text = "Convention + Autographs"
         Me.radAutographs.UseVisualStyleBackColor = True
         '
+        'radConvention
+        '
+        Me.radConvention.AutoSize = True
+        Me.radConvention.Location = New System.Drawing.Point(6, 97)
+        Me.radConvention.Name = "radConvention"
+        Me.radConvention.Size = New System.Drawing.Size(118, 27)
+        Me.radConvention.TabIndex = 2
+        Me.radConvention.TabStop = True
+        Me.radConvention.Text = "Convention"
+        Me.radConvention.UseVisualStyleBackColor = True
+        '
         'frmComicConvention
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -122,4 +135,5 @@ Partial Class frmComicConvention
     Friend WithEvents grpBadges As GroupBox
     Friend WithEvents radSuperHero As RadioButton
     Friend WithEvents radAutographs As RadioButton
+    Friend WithEvents radConvention As RadioButton
 End Class
