@@ -41,7 +41,7 @@ Partial Class frmLondonTubeTickets
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Goudy Old Style", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeading.ForeColor = System.Drawing.Color.Sienna
-        Me.lblHeading.Location = New System.Drawing.Point(12, 9)
+        Me.lblHeading.Location = New System.Drawing.Point(55, 9)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(284, 36)
         Me.lblHeading.TabIndex = 0
@@ -52,7 +52,7 @@ Partial Class frmLondonTubeTickets
         Me.lblTicketCount.AutoSize = True
         Me.lblTicketCount.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTicketCount.ForeColor = System.Drawing.Color.Sienna
-        Me.lblTicketCount.Location = New System.Drawing.Point(13, 82)
+        Me.lblTicketCount.Location = New System.Drawing.Point(56, 82)
         Me.lblTicketCount.Name = "lblTicketCount"
         Me.lblTicketCount.Size = New System.Drawing.Size(179, 25)
         Me.lblTicketCount.TabIndex = 1
@@ -63,7 +63,7 @@ Partial Class frmLondonTubeTickets
         Me.txtTicketCount.BackColor = System.Drawing.SystemColors.Window
         Me.txtTicketCount.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTicketCount.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtTicketCount.Location = New System.Drawing.Point(196, 79)
+        Me.txtTicketCount.Location = New System.Drawing.Point(251, 79)
         Me.txtTicketCount.Name = "txtTicketCount"
         Me.txtTicketCount.Size = New System.Drawing.Size(58, 33)
         Me.txtTicketCount.TabIndex = 2
@@ -76,7 +76,7 @@ Partial Class frmLondonTubeTickets
         Me.grpTicketzones.Controls.Add(Me.radZones13)
         Me.grpTicketzones.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpTicketzones.ForeColor = System.Drawing.Color.Sienna
-        Me.grpTicketzones.Location = New System.Drawing.Point(18, 136)
+        Me.grpTicketzones.Location = New System.Drawing.Point(61, 136)
         Me.grpTicketzones.Name = "grpTicketzones"
         Me.grpTicketzones.Size = New System.Drawing.Size(278, 109)
         Me.grpTicketzones.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class frmLondonTubeTickets
         '
         Me.radZones13.AutoSize = True
         Me.radZones13.Checked = True
-        Me.radZones13.Location = New System.Drawing.Point(6, 29)
+        Me.radZones13.Location = New System.Drawing.Point(18, 29)
         Me.radZones13.Name = "radZones13"
         Me.radZones13.Size = New System.Drawing.Size(101, 27)
         Me.radZones13.TabIndex = 0
@@ -102,18 +102,16 @@ Partial Class frmLondonTubeTickets
         Me.radZones15.Name = "radZones15"
         Me.radZones15.Size = New System.Drawing.Size(101, 27)
         Me.radZones15.TabIndex = 1
-        Me.radZones15.TabStop = True
         Me.radZones15.Text = "Zones 1-5"
         Me.radZones15.UseVisualStyleBackColor = True
         '
         'radZones16
         '
         Me.radZones16.AutoSize = True
-        Me.radZones16.Location = New System.Drawing.Point(85, 62)
+        Me.radZones16.Location = New System.Drawing.Point(90, 62)
         Me.radZones16.Name = "radZones16"
         Me.radZones16.Size = New System.Drawing.Size(101, 27)
         Me.radZones16.TabIndex = 2
-        Me.radZones16.TabStop = True
         Me.radZones16.Text = "Zones 1-6"
         Me.radZones16.UseVisualStyleBackColor = True
         '
@@ -121,7 +119,7 @@ Partial Class frmLondonTubeTickets
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalculate.ForeColor = System.Drawing.Color.Sienna
-        Me.btnCalculate.Location = New System.Drawing.Point(18, 371)
+        Me.btnCalculate.Location = New System.Drawing.Point(61, 320)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(119, 43)
         Me.btnCalculate.TabIndex = 4
@@ -132,7 +130,7 @@ Partial Class frmLondonTubeTickets
         '
         Me.btnClear.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.Sienna
-        Me.btnClear.Location = New System.Drawing.Point(177, 371)
+        Me.btnClear.Location = New System.Drawing.Point(220, 320)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(119, 43)
         Me.btnClear.TabIndex = 5
@@ -144,7 +142,7 @@ Partial Class frmLondonTubeTickets
         Me.lblCost.AutoSize = True
         Me.lblCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCost.ForeColor = System.Drawing.Color.Sienna
-        Me.lblCost.Location = New System.Drawing.Point(20, 292)
+        Me.lblCost.Location = New System.Drawing.Point(56, 267)
         Me.lblCost.Name = "lblCost"
         Me.lblCost.Size = New System.Drawing.Size(105, 25)
         Me.lblCost.TabIndex = 6
@@ -155,7 +153,7 @@ Partial Class frmLondonTubeTickets
         Me.lblTotalCost.AutoSize = True
         Me.lblTotalCost.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalCost.ForeColor = System.Drawing.Color.Sienna
-        Me.lblTotalCost.Location = New System.Drawing.Point(203, 292)
+        Me.lblTotalCost.Location = New System.Drawing.Point(240, 267)
         Me.lblTotalCost.Name = "lblTotalCost"
         Me.lblTotalCost.Size = New System.Drawing.Size(93, 25)
         Me.lblTotalCost.TabIndex = 7
@@ -166,7 +164,7 @@ Partial Class frmLondonTubeTickets
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(388, 399)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.btnClear)

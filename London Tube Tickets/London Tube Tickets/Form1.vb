@@ -59,4 +59,12 @@ Public Class frmLondonTubeTickets
         radZones16.Checked = False
         txtTicketCount.Focus()
     End Sub
+
+    Private Sub FrmLondonTubeTickets_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' This event handler is executed when the form is loaded at the start
+        ' of the program. it sets focus to ticket count and clears cost label
+
+        txtTicketCount.Focus()
+        lblTotalCost.Text = ""
+    End Sub
 End Class
