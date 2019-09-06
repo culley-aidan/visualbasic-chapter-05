@@ -23,6 +23,7 @@ Partial Class frmComicConvention
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblAttendees = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -30,11 +31,22 @@ Partial Class frmComicConvention
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Goudy Old Style", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeading.ForeColor = System.Drawing.Color.Sienna
-        Me.lblHeading.Location = New System.Drawing.Point(238, 9)
+        Me.lblHeading.Location = New System.Drawing.Point(96, 9)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(258, 36)
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Comic Convention"
+        '
+        'lblAttendees
+        '
+        Me.lblAttendees.AutoSize = True
+        Me.lblAttendees.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAttendees.ForeColor = System.Drawing.Color.Sienna
+        Me.lblAttendees.Location = New System.Drawing.Point(27, 74)
+        Me.lblAttendees.Name = "lblAttendees"
+        Me.lblAttendees.Size = New System.Drawing.Size(209, 25)
+        Me.lblAttendees.TabIndex = 1
+        Me.lblAttendees.Text = "Group Member Count:"
         '
         'frmComicConvention
         '
@@ -42,6 +54,7 @@ Partial Class frmComicConvention
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblAttendees)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmComicConvention"
         Me.Text = "Comic Convention"
@@ -51,4 +64,5 @@ Partial Class frmComicConvention
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblAttendees As Label
 End Class
