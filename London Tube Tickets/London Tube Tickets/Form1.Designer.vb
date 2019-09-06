@@ -24,6 +24,7 @@ Partial Class frmLondonTubeTickets
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblTicketCount = New System.Windows.Forms.Label()
+        Me.txtTicketCount = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -42,11 +43,21 @@ Partial Class frmLondonTubeTickets
         Me.lblTicketCount.AutoSize = True
         Me.lblTicketCount.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTicketCount.ForeColor = System.Drawing.Color.Sienna
-        Me.lblTicketCount.Location = New System.Drawing.Point(18, 49)
+        Me.lblTicketCount.Location = New System.Drawing.Point(13, 82)
         Me.lblTicketCount.Name = "lblTicketCount"
         Me.lblTicketCount.Size = New System.Drawing.Size(179, 25)
         Me.lblTicketCount.TabIndex = 1
         Me.lblTicketCount.Text = "Number of Tickets: "
+        '
+        'txtTicketCount
+        '
+        Me.txtTicketCount.BackColor = System.Drawing.SystemColors.Window
+        Me.txtTicketCount.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTicketCount.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.txtTicketCount.Location = New System.Drawing.Point(196, 79)
+        Me.txtTicketCount.Name = "txtTicketCount"
+        Me.txtTicketCount.Size = New System.Drawing.Size(58, 33)
+        Me.txtTicketCount.TabIndex = 2
         '
         'frmLondonTubeTickets
         '
@@ -54,6 +65,7 @@ Partial Class frmLondonTubeTickets
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtTicketCount)
         Me.Controls.Add(Me.lblTicketCount)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmLondonTubeTickets"
@@ -65,4 +77,5 @@ Partial Class frmLondonTubeTickets
 
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblTicketCount As Label
+    Friend WithEvents txtTicketCount As TextBox
 End Class
