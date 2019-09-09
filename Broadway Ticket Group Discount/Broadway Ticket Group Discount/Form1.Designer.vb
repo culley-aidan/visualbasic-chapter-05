@@ -30,6 +30,8 @@ Partial Class frmBroadwayDiscount
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.grpDiscounts = New System.Windows.Forms.GroupBox()
+        Me.lblGroup18 = New System.Windows.Forms.Label()
+        Me.grpDiscounts.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -109,6 +111,7 @@ Partial Class frmBroadwayDiscount
         'grpDiscounts
         '
         Me.grpDiscounts.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDiscounts.Controls.Add(Me.lblGroup18)
         Me.grpDiscounts.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDiscounts.ForeColor = System.Drawing.Color.Sienna
         Me.grpDiscounts.Location = New System.Drawing.Point(74, 121)
@@ -117,6 +120,15 @@ Partial Class frmBroadwayDiscount
         Me.grpDiscounts.TabIndex = 7
         Me.grpDiscounts.TabStop = False
         Me.grpDiscounts.Text = "Discounts"
+        '
+        'lblGroup18
+        '
+        Me.lblGroup18.AutoSize = True
+        Me.lblGroup18.Location = New System.Drawing.Point(29, 26)
+        Me.lblGroup18.Name = "lblGroup18"
+        Me.lblGroup18.Size = New System.Drawing.Size(233, 23)
+        Me.lblGroup18.TabIndex = 0
+        Me.lblGroup18.Text = "1-8 people  -  $xxx per person"
         '
         'frmBroadwayDiscount
         '
@@ -134,6 +146,8 @@ Partial Class frmBroadwayDiscount
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmBroadwayDiscount"
         Me.Text = "Broadway Ticket Group Discount"
+        Me.grpDiscounts.ResumeLayout(False)
+        Me.grpDiscounts.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,4 +161,5 @@ Partial Class frmBroadwayDiscount
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents grpDiscounts As GroupBox
+    Friend WithEvents lblGroup18 As Label
 End Class
