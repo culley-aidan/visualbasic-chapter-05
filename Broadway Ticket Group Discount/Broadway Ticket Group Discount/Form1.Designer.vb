@@ -27,6 +27,7 @@ Partial Class frmBroadwayDiscount
         Me.txtGroupCount = New System.Windows.Forms.TextBox()
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -81,12 +82,24 @@ Partial Class frmBroadwayDiscount
         Me.lblTotalCost.TabIndex = 4
         Me.lblTotalCost.Text = "$0000.00"
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.Sienna
+        Me.btnCalculate.Location = New System.Drawing.Point(19, 181)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(118, 40)
+        Me.btnCalculate.TabIndex = 5
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmBroadwayDiscount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.txtGroupCount)
@@ -104,4 +117,5 @@ Partial Class frmBroadwayDiscount
     Friend WithEvents txtGroupCount As TextBox
     Friend WithEvents lblCost As Label
     Friend WithEvents lblTotalCost As Label
+    Friend WithEvents btnCalculate As Button
 End Class
