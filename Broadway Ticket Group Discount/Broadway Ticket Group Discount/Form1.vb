@@ -42,4 +42,10 @@ Public Class frmBroadwayDiscount
             txtGroupCount.Focus()
         End If
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtGroupCount.Clear()
+        lblTotalCost.Text = ""
+        txtGroupCount.Focus()
+    End Sub
 End Class
