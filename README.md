@@ -5,4 +5,4 @@ Visual Basic Programming 1, Chapter 5
 - [X] Guided Program – Decking Cost Calculator
 - [X] 2 – Comic Convention
 - [X] 3 – London Tube Tickets
-- [ ] 5 – Broadway Ticket Group Discount
+- [X] 5 – Broadway Ticket Group Discount
