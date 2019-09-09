@@ -6,6 +6,12 @@
 
 Option Strict On
 Public Class frmBroadwayDiscount
+
+    Const intGroup18 As Integer = 249
+    Const intGroup912 As Integer = 219
+    Const intGroup1324 As Integer = 199
+    Const intGroup2599 As Integer = 169
+
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
     End Sub
