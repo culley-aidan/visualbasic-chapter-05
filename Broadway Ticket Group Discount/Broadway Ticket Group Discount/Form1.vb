@@ -4,6 +4,7 @@
 ' Purpose:      This windows application computes the estimated cost of tickets based on the 
 '               number  of tickets purchased and the bulk discounts of tickets
 
+Option Strict On
 Public Class frmBroadwayDiscount
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
