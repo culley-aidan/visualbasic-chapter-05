@@ -48,4 +48,14 @@ Public Class frmBroadwayDiscount
         lblTotalCost.Text = ""
         txtGroupCount.Focus()
     End Sub
+
+    Private Sub FrmBroadwayDiscount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblGroup18.Text = String.Format("1-8 people  -  ${0} per person", intGroup18)
+        lblGroup912.Text = String.Format("9-12 people  -  ${0} per person", intGroup912)
+        lblGroup1324.Text = String.Format("13-24 people  -  ${0} per person", intGroup1324)
+        lblGroup2599.Text = String.Format("25-99 people  -  ${0} per person", intGroup2599)
+        txtGroupCount.Clear()
+        lblTotalCost.Text = ""
+        txtGroupCount.Focus()
+    End Sub
 End Class

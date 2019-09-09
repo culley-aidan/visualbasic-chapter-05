@@ -30,10 +30,10 @@ Partial Class frmBroadwayDiscount
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.grpDiscounts = New System.Windows.Forms.GroupBox()
-        Me.lblGroup18 = New System.Windows.Forms.Label()
-        Me.lblGroup912 = New System.Windows.Forms.Label()
-        Me.lblGroup1324 = New System.Windows.Forms.Label()
         Me.lblGroup2599 = New System.Windows.Forms.Label()
+        Me.lblGroup1324 = New System.Windows.Forms.Label()
+        Me.lblGroup912 = New System.Windows.Forms.Label()
+        Me.lblGroup18 = New System.Windows.Forms.Label()
         Me.grpDiscounts.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -85,9 +85,8 @@ Partial Class frmBroadwayDiscount
         Me.lblTotalCost.ForeColor = System.Drawing.Color.Sienna
         Me.lblTotalCost.Location = New System.Drawing.Point(275, 290)
         Me.lblTotalCost.Name = "lblTotalCost"
-        Me.lblTotalCost.Size = New System.Drawing.Size(93, 25)
+        Me.lblTotalCost.Size = New System.Drawing.Size(0, 25)
         Me.lblTotalCost.TabIndex = 4
-        Me.lblTotalCost.Text = "$0000.00"
         '
         'btnCalculate
         '
@@ -127,41 +126,37 @@ Partial Class frmBroadwayDiscount
         Me.grpDiscounts.TabStop = False
         Me.grpDiscounts.Text = "Discounts"
         '
-        'lblGroup18
+        'lblGroup2599
         '
-        Me.lblGroup18.AutoSize = True
-        Me.lblGroup18.Location = New System.Drawing.Point(42, 42)
-        Me.lblGroup18.Name = "lblGroup18"
-        Me.lblGroup18.Size = New System.Drawing.Size(233, 23)
-        Me.lblGroup18.TabIndex = 0
-        Me.lblGroup18.Text = "1-8 people  -  $xxx per person"
-        '
-        'lblGroup912
-        '
-        Me.lblGroup912.AutoSize = True
-        Me.lblGroup912.Location = New System.Drawing.Point(32, 65)
-        Me.lblGroup912.Name = "lblGroup912"
-        Me.lblGroup912.Size = New System.Drawing.Size(243, 23)
-        Me.lblGroup912.TabIndex = 1
-        Me.lblGroup912.Text = "9-12 people  -  $xxx per person"
+        Me.lblGroup2599.AutoSize = True
+        Me.lblGroup2599.Location = New System.Drawing.Point(22, 111)
+        Me.lblGroup2599.Name = "lblGroup2599"
+        Me.lblGroup2599.Size = New System.Drawing.Size(0, 23)
+        Me.lblGroup2599.TabIndex = 3
         '
         'lblGroup1324
         '
         Me.lblGroup1324.AutoSize = True
         Me.lblGroup1324.Location = New System.Drawing.Point(22, 88)
         Me.lblGroup1324.Name = "lblGroup1324"
-        Me.lblGroup1324.Size = New System.Drawing.Size(253, 23)
+        Me.lblGroup1324.Size = New System.Drawing.Size(0, 23)
         Me.lblGroup1324.TabIndex = 2
-        Me.lblGroup1324.Text = "13-24 people  -  $xxx per person"
         '
-        'lblGroup2599
+        'lblGroup912
         '
-        Me.lblGroup2599.AutoSize = True
-        Me.lblGroup2599.Location = New System.Drawing.Point(22, 111)
-        Me.lblGroup2599.Name = "lblGroup2599"
-        Me.lblGroup2599.Size = New System.Drawing.Size(253, 23)
-        Me.lblGroup2599.TabIndex = 3
-        Me.lblGroup2599.Text = "25-99 people  -  $xxx per person"
+        Me.lblGroup912.AutoSize = True
+        Me.lblGroup912.Location = New System.Drawing.Point(32, 65)
+        Me.lblGroup912.Name = "lblGroup912"
+        Me.lblGroup912.Size = New System.Drawing.Size(0, 23)
+        Me.lblGroup912.TabIndex = 1
+        '
+        'lblGroup18
+        '
+        Me.lblGroup18.AutoSize = True
+        Me.lblGroup18.Location = New System.Drawing.Point(42, 42)
+        Me.lblGroup18.Name = "lblGroup18"
+        Me.lblGroup18.Size = New System.Drawing.Size(0, 23)
+        Me.lblGroup18.TabIndex = 0
         '
         'frmBroadwayDiscount
         '
