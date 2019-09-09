@@ -33,6 +33,7 @@ Partial Class frmBroadwayDiscount
         Me.lblGroup18 = New System.Windows.Forms.Label()
         Me.lblGroup912 = New System.Windows.Forms.Label()
         Me.lblGroup1324 = New System.Windows.Forms.Label()
+        Me.lblGroup2599 = New System.Windows.Forms.Label()
         Me.grpDiscounts.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -113,14 +114,15 @@ Partial Class frmBroadwayDiscount
         'grpDiscounts
         '
         Me.grpDiscounts.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDiscounts.Controls.Add(Me.lblGroup2599)
         Me.grpDiscounts.Controls.Add(Me.lblGroup1324)
         Me.grpDiscounts.Controls.Add(Me.lblGroup912)
         Me.grpDiscounts.Controls.Add(Me.lblGroup18)
         Me.grpDiscounts.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDiscounts.ForeColor = System.Drawing.Color.Sienna
-        Me.grpDiscounts.Location = New System.Drawing.Point(74, 121)
+        Me.grpDiscounts.Location = New System.Drawing.Point(74, 114)
         Me.grpDiscounts.Name = "grpDiscounts"
-        Me.grpDiscounts.Size = New System.Drawing.Size(294, 146)
+        Me.grpDiscounts.Size = New System.Drawing.Size(294, 164)
         Me.grpDiscounts.TabIndex = 7
         Me.grpDiscounts.TabStop = False
         Me.grpDiscounts.Text = "Discounts"
@@ -128,7 +130,7 @@ Partial Class frmBroadwayDiscount
         'lblGroup18
         '
         Me.lblGroup18.AutoSize = True
-        Me.lblGroup18.Location = New System.Drawing.Point(29, 26)
+        Me.lblGroup18.Location = New System.Drawing.Point(42, 42)
         Me.lblGroup18.Name = "lblGroup18"
         Me.lblGroup18.Size = New System.Drawing.Size(233, 23)
         Me.lblGroup18.TabIndex = 0
@@ -137,7 +139,7 @@ Partial Class frmBroadwayDiscount
         'lblGroup912
         '
         Me.lblGroup912.AutoSize = True
-        Me.lblGroup912.Location = New System.Drawing.Point(19, 49)
+        Me.lblGroup912.Location = New System.Drawing.Point(32, 65)
         Me.lblGroup912.Name = "lblGroup912"
         Me.lblGroup912.Size = New System.Drawing.Size(243, 23)
         Me.lblGroup912.TabIndex = 1
@@ -146,11 +148,20 @@ Partial Class frmBroadwayDiscount
         'lblGroup1324
         '
         Me.lblGroup1324.AutoSize = True
-        Me.lblGroup1324.Location = New System.Drawing.Point(9, 72)
+        Me.lblGroup1324.Location = New System.Drawing.Point(22, 88)
         Me.lblGroup1324.Name = "lblGroup1324"
         Me.lblGroup1324.Size = New System.Drawing.Size(253, 23)
         Me.lblGroup1324.TabIndex = 2
         Me.lblGroup1324.Text = "13-24 people  -  $xxx per person"
+        '
+        'lblGroup2599
+        '
+        Me.lblGroup2599.AutoSize = True
+        Me.lblGroup2599.Location = New System.Drawing.Point(22, 111)
+        Me.lblGroup2599.Name = "lblGroup2599"
+        Me.lblGroup2599.Size = New System.Drawing.Size(253, 23)
+        Me.lblGroup2599.TabIndex = 3
+        Me.lblGroup2599.Text = "25-99 people  -  $xxx per person"
         '
         'frmBroadwayDiscount
         '
@@ -186,4 +197,5 @@ Partial Class frmBroadwayDiscount
     Friend WithEvents lblGroup18 As Label
     Friend WithEvents lblGroup912 As Label
     Friend WithEvents lblGroup1324 As Label
+    Friend WithEvents lblGroup2599 As Label
 End Class
