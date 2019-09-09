@@ -31,6 +31,7 @@ Partial Class frmBroadwayDiscount
         Me.btnClear = New System.Windows.Forms.Button()
         Me.grpDiscounts = New System.Windows.Forms.GroupBox()
         Me.lblGroup18 = New System.Windows.Forms.Label()
+        Me.lblGroup912 = New System.Windows.Forms.Label()
         Me.grpDiscounts.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -111,6 +112,7 @@ Partial Class frmBroadwayDiscount
         'grpDiscounts
         '
         Me.grpDiscounts.BackColor = System.Drawing.Color.AliceBlue
+        Me.grpDiscounts.Controls.Add(Me.lblGroup912)
         Me.grpDiscounts.Controls.Add(Me.lblGroup18)
         Me.grpDiscounts.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDiscounts.ForeColor = System.Drawing.Color.Sienna
@@ -129,6 +131,15 @@ Partial Class frmBroadwayDiscount
         Me.lblGroup18.Size = New System.Drawing.Size(233, 23)
         Me.lblGroup18.TabIndex = 0
         Me.lblGroup18.Text = "1-8 people  -  $xxx per person"
+        '
+        'lblGroup912
+        '
+        Me.lblGroup912.AutoSize = True
+        Me.lblGroup912.Location = New System.Drawing.Point(19, 49)
+        Me.lblGroup912.Name = "lblGroup912"
+        Me.lblGroup912.Size = New System.Drawing.Size(243, 23)
+        Me.lblGroup912.TabIndex = 1
+        Me.lblGroup912.Text = "9-12 people  -  $xxx per person"
         '
         'frmBroadwayDiscount
         '
@@ -162,4 +173,5 @@ Partial Class frmBroadwayDiscount
     Friend WithEvents btnClear As Button
     Friend WithEvents grpDiscounts As GroupBox
     Friend WithEvents lblGroup18 As Label
+    Friend WithEvents lblGroup912 As Label
 End Class
